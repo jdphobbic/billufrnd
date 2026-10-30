@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f1">
+  <title>A Little Surprise for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro-copy">
+        <span class="eyebrow">A little something for you</span>
+        <h1>Someone has a<br><em>secret to tell.</em></h1>
+        <button class="open-button" id="openButton" type="button" aria-controls="surprise">
+          Open your surprise
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <div class="envelope-wrap" aria-hidden="true">
+        <div class="heart" id="heart">♥</div>
+        <div class="envelope">
+          <div class="flap"></div>
+          <div class="letter">
+            <span>For you</span>
+            <b>♥</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surprise" id="surprise" aria-hidden="true">
+      <header>
+        <span class="eyebrow">Just a reminder</span>
+        <h2>You are loved.</h2>
+      </header>
+
+      <figure class="photo-note">
+        <img src="assets/photo.jpg.jpeg" alt="A special memory of us">
+        <figcaption>
+          <span>I love yeww ♥</span>
+          <span>And that's the beginning and end of everything 🌍</span>
+          <span>A million times over, I will choose you 😊 👉</span>
+        </figcaption>
+      </figure>
+
+      <div class="messages">
+        <article class="message featured">
+          <span>01</span>
+          <p>I love yeww <b>♥</b></p>
+        </article>
+        <article class="message">
+          <span>02</span>
+          <p>And that's the beginning and end of everything <b>🌍</b></p>
+        </article>
+        <article class="message">
+          <span>03</span>
+          <p>A million times over,<br> I will choose you <b>� 👉</b></p>
+        </article>
+      </div>
+
+      <button class="music-player" id="musicButton" type="button" aria-label="Play our song">
+        <span class="play-icon" aria-hidden="true">▶</span>
+        <span class="track">
+          <small>Our song</small>
+          <strong id="musicStatus">Press to play</strong>
+        </span>
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      </button>
+      <audio id="song" preload="none" loop>
+        <source src="assets/song.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
